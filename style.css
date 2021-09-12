@@ -23,6 +23,14 @@ body{
 	background-color:#F4F5F0;
 }
 
+@media (max-width:1200px) {
+	body{
+		margin-left: 45px;
+		
+	}
+}
+
+
 .container{
 	margin:0 auto;
 	width: 1000px;
@@ -44,10 +52,14 @@ title{
 	width: 100%;
 }
 
+
 .header_inner{
 	z-index: 100;
 	width: 100%;
 }
+
+
+
 
 .header_fixed {
 	position: fixed;
@@ -146,15 +158,24 @@ title{
 
 
 .intro{
-	display: block;
-	width: 100%;
+	display: flex;
+	max-width: 100%;
+	justify-content: center;
+	height: auto !important;
 }
+
+/* @media screen and (max-width: 2246px){
+	.intro{
+		display: flex;
+		justify-content: center;
+		align-items:center;
+	}
+	} */
 
 
 .video_media{
 	max-width: 100%;
 	height: 100%;
-	
 	margin-bottom: 35px;
 }
 
@@ -162,7 +183,8 @@ title{
 	display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
-    max-width: 1750px;
+    /* max-width: 1750px; */
+	max-width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -250,6 +272,12 @@ title{
     position: relative;
     background: no-repeat 70% top/cover;
 	
+}
+
+@media screen and (max-width: 2246px){
+	.h_info video{
+		height: 100%;
+	}
 }
 
 .h_info::before {
