@@ -21,15 +21,21 @@
 body{
 	margin: 0;
 	background-color:#F4F5F0;
+	min-width: 1270px;
 }
 
 
+@media (max-width:1350px) {
+	body{
+		margin:0 auto;
+		width: 1000px;
+	}
+}
 
 @media (max-width:1200px) {
 	body{
 		margin:0 auto;
 		width: 1000px;
-		margin-left:65px;
 	}
 }
 
@@ -37,7 +43,6 @@ body{
 	body{
 		margin:0 auto;
 		width: 1000px;
-		margin-left:65px;
 	}
 }
 
